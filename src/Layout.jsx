@@ -1,19 +1,29 @@
+import Airbnb from "./Airbnbicon";
 import Article from "./Article";
 import Footer from "./Footer";
 import Header from "./Header";
-import Nav, { NavMobile } from "./Nav";
+import { NavMobile } from "./Nav";
 
 function Layout() {
-  const navArr = [{ title: "메뉴1" }, { title: "메뉴2" }, { title: "메뉴3" }];
+  const navArr = [
+    { title: "m-메뉴1" },
+    { title: "m-메뉴2" },
+    { title: "m-메뉴3" },
+  ];
+  const nav = [
+    { title: "pc-메뉴1" },
+    { title: "pc-메뉴2" },
+    { title: "pc-메뉴3" },
+  ];
+
   return (
     <div className="wrap">
-      <Header />
-      <Nav />
+      <Header logo="봄이회사" nav={nav} />
       <NavMobile nav={navArr} />
+      <Airbnb />
       <Article tit="html이란?" desc="html이란 이것이다." />
       <Article tit="css란?" desc="css란 이것이다." />
       <Article tit="js란?" desc="js란 이것이다." />
-
       <Footer />
     </div>
   );
