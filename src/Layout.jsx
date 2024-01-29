@@ -1,5 +1,6 @@
 import Airbnb from "./Airbnbicon";
 import Article from "./Article";
+import Comments from "./Comments";
 import Footer from "./Footer";
 import Header from "./Header";
 import { NavMobile } from "./Nav";
@@ -21,6 +22,7 @@ function Layout() {
       <Header logo="봄이회사" nav={nav} />
       <NavMobile nav={navArr} />
       <Airbnb />
+      <Comments />
       <Article tit="html이란?" desc="html이란 이것이다." />
       <Article tit="css란?" desc="css란 이것이다." />
       <Article tit="js란?" desc="js란 이것이다." />

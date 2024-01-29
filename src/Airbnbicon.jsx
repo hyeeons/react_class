@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { TbBeach } from "react-icons/tb";
 import { GiCampingTent } from "react-icons/gi";
-import Comments from "./Comments";
 
 function Airbnb() {
   const iconArr = [
@@ -22,7 +21,6 @@ function Airbnb() {
           </IconCard>
         ))}
       </IconWrap>
-      <Comments />
     </>
   );
 }
