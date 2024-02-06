@@ -1,10 +1,12 @@
 import Cat, { Dog } from "./Cat";
+import Event from "./Event";
 import Layout from "./Layout";
 import Product from "./Product";
 
 function App() {
   return (
     <>
+      <Event />
       <Product />
       {/* 부모 컴포넌트 */}
       <Cat name="봄이" age="3" />
