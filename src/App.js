@@ -6,11 +6,15 @@ import Product from "./Product";
 import Setnumber from "./Setnumber";
 import Sort2 from "./Sort2";
 import State from "./State";
+import Switch from "./Switch";
 
 function App() {
   return (
     <>
+      <Switch />
+      <hr></hr>
       <Sort2 />
+      <hr></hr>
       <Calculator />
       <hr></hr>
       <Setnumber />
