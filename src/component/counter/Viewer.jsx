@@ -10,9 +10,9 @@ const Viewer = ({ count }) => {
 };
 
 const ViewSt = styled.div`
-  width: 600px;
+  width: 650px;
   height: 60px;
-  background-color: lightgreen;
+  background-color: lightpink;
   margin-bottom: 30px;
   border-radius: 20px;
   .view {
