@@ -7,10 +7,15 @@ import Setnumber from "./Setnumber";
 import Sort2 from "./Sort2";
 import State from "./State";
 import Switch from "./Switch";
+import TestApi from "./TestApi";
+import CounterApp from "./component/counter/CounterApp";
 
 function App() {
   return (
     <>
+      <CounterApp />
+      <hr></hr>
+      <TestApi />
       <Switch />
       <hr></hr>
       <Sort2 />
