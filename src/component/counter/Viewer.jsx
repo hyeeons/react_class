@@ -15,6 +15,7 @@ const ViewSt = styled.div`
   background-color: lightpink;
   margin-bottom: 30px;
   border-radius: 20px;
+
   .view {
     width: 100%;
     height: 30px;

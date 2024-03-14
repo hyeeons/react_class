@@ -9,10 +9,15 @@ import State from "./State";
 import Switch from "./Switch";
 import TestApi from "./TestApi";
 import CounterApp from "./component/counter/CounterApp";
+import Movie from "./component/movie/Movie";
+import MovieList from "./component/movie/MovieList";
 
 function App() {
   return (
     <>
+      <MovieList />
+      <Movie />
+      <hr></hr>
       <CounterApp />
       <hr></hr>
       <TestApi />

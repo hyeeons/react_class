@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Controller from "./Controller";
 import Viewer from "./Viewer";
 
 const CounterApp = () => {
+  useEffect(() => {
+    // document.body.style.backgroundColor = "lightpink";
+    // document.body.id = "intro";
+    // document.body.classList.add("classbody");
+  }, []);
+
   const [count, setCount] = useState(0); // 1)
   const handleSetCount = (value) => {
     setCount(count + value);
