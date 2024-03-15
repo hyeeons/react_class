@@ -7,7 +7,7 @@ const MovieList = () => {
   useEffect(() => {
     axios
       .get(
-        "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=&targetDt=20240311"
+        "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=11d20251f642c46a69db1cabac189d5b&targetDt=20240214"
       )
       .then((response) => {
         const dataArray = response.data.boxOfficeResult.dailyBoxOfficeList;

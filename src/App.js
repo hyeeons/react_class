@@ -11,16 +11,21 @@ import TestApi from "./TestApi";
 import CounterApp from "./component/counter/CounterApp";
 import Movie from "./component/movie/Movie";
 import MovieList from "./component/movie/MovieList";
+import Todo from "./component/todolist/Todo";
 
 function App() {
   return (
     <>
-      <MovieList />
-      <Movie />
+      <Todo />
       <hr></hr>
       <CounterApp />
       <hr></hr>
+      <MovieList />
+      <hr></hr>
+      <Movie />
+      <hr></hr>
       <TestApi />
+      <hr></hr>
       <Switch />
       <hr></hr>
       <Sort2 />
