@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const TodoEditor = ({ addTodo }) => {
   const [task, setTask] = useState("");
+  const inputRef = useRef(null);
   const onChangeTask = (e) => setTask(e.target.value);
   const onSubmit = () => {
     if (!task) {
@@ -13,7 +14,12 @@ const TodoEditor = ({ addTodo }) => {
     addTodo({ task });
     setTask("");
   };
-  const inputRef = useRef(null);
+
+  const onKeyDown = (e) => {
+    if (e.key === "Enter") {
+      onSubmit();
+    }
+  };
   return (
     <TodoEditSt>
       <h3>새로운 Todo 작성하기</h3>
@@ -24,6 +30,7 @@ const TodoEditor = ({ addTodo }) => {
           placeholder="내가 할 일은?"
           onChange={onChangeTask}
           value={task}
+          onKeyDown={onKeyDown}
         />
         <button onClick={onSubmit}>추가</button>
       </div>
