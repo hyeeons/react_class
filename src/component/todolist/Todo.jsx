@@ -39,11 +39,17 @@ const Todo = () => {
     setTodo([newTodo, ...todo]);
   };
 
+  const onUpdate = (id) => {
+    setTodo(
+      todo.map((it) => (it.id === id ? { ...it, isDone: !it.isDone } : it))
+    );
+  };
+
   return (
     <TodoAppSt>
       <TodoHd />
       <TodoEditor addTodo={addTodo} />
-      <TodoList todo={todo} />
+      <TodoList todo={todo} onUpdate={onUpdate} />
     </TodoAppSt>
   );
 };

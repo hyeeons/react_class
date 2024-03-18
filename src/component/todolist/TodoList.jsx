@@ -2,13 +2,15 @@ import { useState } from "react";
 import styled from "styled-components";
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todo }) => {
+const TodoList = ({ todo, onUpdate }) => {
   const [search, setSearch] = useState("");
   const onSearch = (e) => {
     setSearch(e.target.value);
   };
   const getSearchTodo = () => {
-    return todo.filter((Item) => Item.task.includes(search));
+    return todo.filter((Item) =>
+      Item.task.toLowerCase().includes(search.toLowerCase())
+    );
   };
 
   return (
@@ -22,7 +24,11 @@ const TodoList = ({ todo }) => {
           onChange={onSearch}
         />
         <ul>
-          <TodoItem todo={todo} getSearchTodo={getSearchTodo} />
+          <TodoItem
+            todo={todo}
+            getSearchTodo={getSearchTodo}
+            onUpdate={onUpdate}
+          />
         </ul>
       </div>
     </TodoListSt>

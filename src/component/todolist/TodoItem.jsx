@@ -1,14 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-const TodoItem = ({ todo, getSearchTodo }) => {
+const TodoItem = ({ todo, getSearchTodo, onUpdate }) => {
   return (
     <TodoItemSt>
       {/* index대신 key값을 id로 (고유번호임) */}
       {getSearchTodo().map(({ id, isDone, task, createdDate }) => (
         <li key={id}>
-          <input type="checkbox" />
-          <span>{task}</span>
+          <input
+            type="checkbox"
+            checked={isDone}
+            onChange={() => onUpdate(id)}
+          />
+          <span style={{ textDecoration: isDone ? "line-through" : "none" }}>
+            {task}
+          </span>
           <span>{new Date(createdDate).toLocaleDateString()}</span>
           <button>삭제</button>
         </li>
