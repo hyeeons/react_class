@@ -5,7 +5,13 @@ const TodoEditor = ({ addTodo }) => {
   const [task, setTask] = useState("");
   const onChangeTask = (e) => setTask(e.target.value);
   const onSubmit = () => {
+    if (!task) {
+      alert("할 일을 입력해주세요!");
+      inputRef.current.focus();
+      return;
+    }
     addTodo({ task });
+    setTask("");
   };
   const inputRef = useRef(null);
   return (
