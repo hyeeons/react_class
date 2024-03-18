@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-const TodoItem = ({ todo }) => {
+const TodoItem = ({ todo, getSearchTodo }) => {
   return (
     <TodoItemSt>
       {/* index대신 key값을 id로 (고유번호임) */}
-      {todo.map(({ id, isDone, task, createdDate }) => (
+      {getSearchTodo().map(({ id, isDone, task, createdDate }) => (
         <li key={id}>
           <input type="checkbox" />
           <span>{task}</span>
