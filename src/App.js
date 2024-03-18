@@ -11,16 +11,23 @@ import TestApi from "./TestApi";
 import CounterApp from "./component/counter/CounterApp";
 import Movie from "./component/movie/Movie";
 import MovieList from "./component/movie/MovieList";
+import Clock from "./component/sople/Clock";
+import TestComments from "./component/sople/TestComments";
+import TestCommentBox from "./component/sople/TestCommentsList";
 import Todo from "./component/todolist/Todo";
 
 function App() {
   return (
     <>
+      <Clock />
+      <hr></hr>
+      <TestCommentBox />
+      <hr></hr>
       <Todo />
       <hr></hr>
       <CounterApp />
       <hr></hr>
-      <MovieList />
+      {/* <MovieList /> */}
       <hr></hr>
       <Movie />
       <hr></hr>
