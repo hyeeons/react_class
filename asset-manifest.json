@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/react_class/static/js/main.6ba6d837.js",
+    "static/media/switch@2x.png": "/react_class/static/media/switch@2x.65e578eb781b399ce7fd.png",
+    "static/media/switch-off.svg": "/react_class/static/media/switch-off.361d2ca92d2187457687b714e7732cf3.svg",
+    "static/media/switch-on.svg": "/react_class/static/media/switch-on.2aa726385e6a729892f44aaa8ecf5d51.svg",
+    "index.html": "/react_class/index.html",
+    "main.6ba6d837.js.map": "/react_class/static/js/main.6ba6d837.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6ba6d837.js"
+  ]
+}
