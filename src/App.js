@@ -27,7 +27,7 @@ function App() {
       <hr></hr>
       <CounterApp />
       <hr></hr>
-      {/* <MovieList /> */}
+      <MovieList />
       <hr></hr>
       <Movie />
       <hr></hr>
